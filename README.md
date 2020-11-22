@@ -11,7 +11,7 @@ CMD ["node", "/home/app/server.js"]
 
 docker build -t myapp:1.0 .
 docker images (To verify and see IID)
-docker run my-app:1.0
+docker run -it -d --name mycontainer my-app:1.0
 docker ps
 docker stop CID
 docker rm CID
